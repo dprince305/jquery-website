@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>pato restaurant</title>
+    <!-- remixicon -->
+    <link rel="stylesheet" href="remix/remixicon.css">
+    <!-- font-family -->
+    <link rel="stylesheet" href="css/text.css">
+    <!-- animation -->
+    <link rel="stylesheet" href="css/aos.css">
+    <!-- swiper -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <!-- main css -->
+    <link href="css/style.css" id="colorchange" rel="stylesheet">
+    <!-- media -->
+    <link rel="stylesheet" href="css/meadia.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <!-- pointer -->
+    <div class="cursor"></div>
+    <div class="cursor2"></div>
+
+    <!-- loader -->
+    <div class="loader">
+        <img src="images/logo.png" alt="">
+    </div>
+
+    <!-- setting -->
+    <a href="javascript:void(0)" class="setting">
+        <i class="ri-settings-2-line"></i>
+    </a>
+    <div class="theam-box">
+        <a href="javascript:void(0)" class="color-change" id="light">Light</a>
+        <a href="javascript:void(0)" class="color-change" id="dark">Dark</a>
+    </div>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="containar">
+            <div class="row d-flex justify-between mega align-center" data-aos="fade-down">
+                <div class="w-2 w-lg-2 w-sm-6 w-xs-6">
+                    <div class="logo">
+                        <a href="#">
+                            <img src="images/logo.png" alt="logo" title="logo" />
+                        </a>
+                    </div>
+                </div>
+                <nav class="w-6" id="nav">
+                    <ul class=" d-flex justify-center flex-column">
+                        <li><a href="#">HOME</a></li>
+                        <li class="dropdown">
+                            <a href="#">MENU</a>
+                            <ul class="dropdown-menu w-md-none">
+                                <li><a href="#">menu1</a></li>
+                                <li class="sub-menu">
+                                    <a href="#">menu2</a>
+                                    <div class="sub-item">
+                                        <ul>
+                                            <li><a href="#">sub item-1</a></li>
+                                            <li><a href="#">sub item-2</a></li>
+                                            <li><a href="#">sub item-3</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li><a href="#">menu3</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">RESERVATION</a></li>
+                        <li><a href="#">ABOUT</a></li>
+                        <li class="mega-menu">
+                            <a href="#">BLOG</a>
+                            <div class="mega-item d-flex justify-between ">
+                                <ul>
+                                    <li><a href="#">menu 1</a></li>
+                                    <li><a href="#">menu 1</a></li>
+                                    <li><a href="#">menu 1</a></li>
+                                    <li><a href="#">menu 1</a></li>
+                                    <li><a href="#">menu 1</a></li>
+                                    <li><a href="#">menu 1</a></li>
+                                </ul>
+                                <ul>
+                                    <li><a href="#">menu 2</a></li>
+                                    <li><a href="#">menu 2</a></li>
+                                    <li><a href="#">menu 2</a></li>
+                                    <li><a href="#">menu 2</a></li>
+                                    <li><a href="#">menu 2</a></li>
+                                    <li><a href="#">menu 2</a></li>
+                                </ul>
+
+                                <ul>
+                                    <li><a href="#">menu 3</a></li>
+                                    <li><a href="#">menu 3</a></li>
+                                    <li><a href="#">menu 3</a></li>
+                                    <li><a href="#">menu 3</a></li>
+                                    <li><a href="#">menu 3</a></li>
+                                    <li><a href="#">menu 3</a></li>
+                                </ul>
+                                <ul>
+                                    <li><a href="#">menu 4</a></li>
+                                    <li><a href="#">menu 4</a></li>
+                                    <li><a href="#">menu 4</a></li>
+                                    <li><a href="#">menu 4</a></li>
+                                    <li><a href="#">menu 4</a></li>
+                                    <li><a href="#">menu 4</a></li>
+                                </ul>
+                                <ul>
+                                    <li><a href="#">menu 5</a></li>
+                                    <li><a href="#">menu 5</a></li>
+                                    <li><a href="#">menu 5</a></li>
+                                    <li><a href="#">menu 5</a></li>
+                                    <li><a href="#">menu 5</a></li>
+                                    <li><a href="#">menu 5</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="#">CONTACT</a></li>
+                    </ul>
+                </nav>
+                <div class="w-3 d-flex jus-end w-md-3 w-sm-4 w-xs-6">
+                    <div class="social">
+                        <a href="#"><i class="ri-token-swap-line"></i></a>
+                        <a href="#"><i class="ri-facebook-fill"></i></a>
+                        <a href="#"><i class="ri-twitter-fill"></i></a>
+                        <a href="#"><i class="ri-menu-fill"></i></a>
+                    </div>
+                </div>
+                <div class="togal" id="toggle">
+                    <i class="ri-menu-fill"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!-- BENNER -->
+        <section class="benner d-flex justify-center align-center banner-x " >
+            <div class="containar">
+                <div class="row">
+                    <div class="w-1"></div>
+                    <div class="w-10">
+                        <div class="benner-content text-center" data-aos="fade-up">
+                            <!-- <h2>Welcome to</h2>
+                            <h1>PATO PLACE</h1> -->
+                            
+                            <h1 class="cd-headline rotate-1">
+                                <span>Welcome to PATO</span>
+                                <span class="cd-words-wrapper">
+                                    <b class="is-visible">PLACE</b>
+                                    <b>RESTAURANT</b>
+                                </span>
+                            </h1>
+                            <a href="#">LOOK MENU</a>
+                        </div>
+                    </div>
+                    <div class="w-1"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section class="py about-x"id="particles-js">
+            <div class="containar">
+                <div class="row align-center ">
+                    <div class="w-6 w-xs-12">
+                        <div class="about-content text-center" data-aos="fade-right">
+                            <h3>Italian Restaurant</h3>
+                            <h2>WELCOME</h2>
+                            <p>Donec quis lorem nulla. Nunc eu odio mi. Morbi nec lobortis est. Sed fringilla, nunc sed
+                                imperdiet lacinia, nisl ante egestas mi, ac facilisis ligula sem id neque.</p>
+                            <a href="#">OUR STORY <i class="ri-arrow-right-line"></i></a>
+                        </div>
+                    </div>
+                    <div class="w-6 w-xs-12" data-aos="fade-left">
+                        <div class="about-img">
+                            <img src="images/about.webp" alt="about" title="about" width="100%">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Discover -->
+        <section>
+            <div class="discover d-flex justify-center align-center text-center">
+                <div class="containar">
+                    <div class="row">
+                        <div class="w-12">
+                            <div class="discover-content" data-aos="flip-left">
+                                <h3>Discover</h3>
+                                <h2>PATO PLACE</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- blog -->
+        <section class="py blog" data-aos="zoom-in-down">
+            <div class="containar">
+                <div class="row">
+
+                        <div class="w-4 w-xs-12">
+                            <div class="blog-image">
+                                <img src="images/blog-1.webp" alt="blog-1" title="blog-1" width="100%">
+                            </div>
+                            <div class="blog-content">
+                                <a href="#">
+                                    <h3>ROMANTIC RESTAURANT</h3>
+                                </a>
+                                <p>Phasellus lorem enim, luctus ut velit eget, con-</br>vallis egestas eros</p>
+                                <a href="#">learn more <i class="ri-arrow-right-line"></i></a>
+                            </div>
+                        </div>
+                        <div class="w-4 w-xs-12">
+                            <div class="blog-image">
+                                <img src="images/blog-2.webp" alt="blog-2" title="blog-2" width="100%">
+                            </div>
+                            <div class="blog-content">
+                                <a href="#">
+                                    <h3>DELICIOUS FOOD</h3>
+                                </a>
+                                <p>Aliquam eget aliquam magna, quis posuere risus </br> ac justo ipsum nibh urna</p>
+                                <a href="#">learn more <i class="ri-arrow-right-line"></i></a>
+                            </div>
+                        </div>
+                        <div class="w-4 w-xs-12">
+                            <div class="blog-image">
+                                <img src="images/blog-3.webp" alt="blog-3" title="blog-3" width="100%">
+                            </div>
+                            <div class="blog-content">
+                                <a href="#">
+                                    <h3>RED WINES YOU LOVE</h3>
+                                </a>
+                                <p>Sed ornare ligula eget tortor tempor, quis porta </br> tellus dictum.</p>
+                                <a href="#">learn more <i class="ri-arrow-right-line"></i></a>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- menu -->
+        <section class="py menu">
+            <div class="containar">
+                <div class="menu">
+                    <div class="menu-content text-center" data-aos="fade-right">
+                        <h3>Discover</h3>
+                        <h2>OUR MENU</h2>
+                    </div>
+                    <div class="row wrap">
+                        <div class="w-4 w-xs-6">
+                            <div class="menu-img relative" data-aos="flip-left">
+                                <img src="images/menu1.webp" alt="menu1" title="menu1" width="100%">
+                                <div class="menu-btn">
+                                    <a href="#">LUNCH</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-4 w-xs-6">
+                            <div class="menu-img relative" data-aos="flip-right">
+                                <img src="images/menu2.webp" alt="menu2" title="menu2" width="100%">
+                                <div class="menu-btn">
+                                    <a href="#">Dinner</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-4 w-xs-12 wrap">
+                            <div class="menu-img ">
+                                <div class="w-12 w-xs-12">
+                                    <div class="menu-images relative" data-aos="fade-left">
+                                        <img src="images/menu3.webp" alt="menu2" title="menu2" width="100%">
+                                        <div class="menu-btn">
+                                            <a href="#">Drink</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="w-12 w-xs-12">
+                                    <div class="menu-images relative" data-aos="fade-left"
+                                        data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="500">
+                                        <img src="images/menu4.webp" alt="menu2" title="menu2" width="100%"
+                                            style="margin-top: 20px;">
+                                        <div class="menu-btn">
+                                            <a href="#">Starters</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="w-8 w-xs-12">
+                            <div class="menu-img relative" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                                <img src="images/menu5.webp" alt="menu2" title="menu2" width="100%">
+                                <div class="menu-btn">
+                                    <a href="#">Happy Hour</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-4 w-xs-12">
+                            <div class="menu-img relative" data-aos="fade-left" data-aos-anchor="#example-anchor"
+                                data-aos-offset="500" data-aos-duration="500">
+                                <img src="images/menu6.webp" alt="menu2" title="menu2" width="100%">
+                                <div class="menu-btn">
+                                    <a href="#">Dessert</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- event -->
+        <section class="event py">
+            <div class="containar">
+                <div class="event-title text-center" data-aos="fade-right">
+                    <h3>Upcomming</h3>
+                    <h2>Events</h2>
+                </div>
+                <div class="row event-item text-center align-center">
+                    <div class="w-6 w-lg-12">
+                        <div class="event-img">
+                            <img src="images/event-image.webp" alt="event" title="event" width="100%">
+                            <div class="event-time">
+                                <span>08:00 PM Tuesday - 21 November 2018</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-6 w-lg-12">
+                        <div class="event-content">
+                            <h3>Wines during specific nights</h3>
+                            <p> Donec quis lorem nulla. Nunc eu odio mi. Morbi nec lobortis est. Sed fringilla, nunc sed
+                                imperdiet lacinia</p>
+                            <div class="count">
+                                <ul class="d-flex justify-center align-center text-center">
+                                    <li>
+                                        <h2 class="counter" data-speed="5000">28</h2>
+                                        <p>days</p>
+                                    </li>
+                                    <li>
+                                        <h2 class="counter" data-speed="5000">18</h2>
+                                        <p>hours</p>
+                                    </li>
+                                    <li>
+                                        <h2 class="counter" data-speed="5000">60</h2>
+                                        <p>minutes</p>
+                                    </li>
+                                    <li>
+                                        <h2 class="counter" data-speed="5000">58</h2>
+                                        <p>seconds</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="#">learn more <i class="ri-arrow-right-line"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- contect -->
+        <section class="contect py contact-x">
+            <div class="containar">
+                <div class="row">
+                    <div class="w-6  w-lg-6 w-md-12">
+                        <div class="contect-title text-center" data-aos="flip-left">
+                            <h3>Reservation</h3>
+                            <h2>BOOK TABLE</h2>
+                        </div>
+                        <div class="contect-form">
+                            <form>
+                                <div class="row">
+                                    <div class="w-6  w-lg-6 w-md-6">
+                                        <div class="content-form" data-aos="fade-right">
+                                            <label>Date</label>
+                                            <input type="date" />
+                                            <label>time</label>
+                                            <input type="time" />
+                                            <label>people</label>
+                                            <select>
+                                                <option>--select people--</option>
+                                                <option>1 person</option>
+                                                <option>2 person</option>
+                                                <option>3 person</option>
+                                                <option>4 person</option>
+                                                <option>5 person</option>
+                                                <option>6 person</option>
+                                                <option>7 person</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="w-6 w-lg-6 w-md-6" data-aos="fade-right">
+                                        <label>name</label>
+                                        <input type="text" placeholder="name" />
+                                        <label>phone</label>
+                                        <input type="number" placeholder="phone" />
+                                        <label>Email</label>
+                                        <input type="email" placeholder="Email" />
+                                    </div>
+                                </div>
+                            </form>
+                            <div class="text-center" data-aos="flip-left">
+                                <a href="#">BOOK TABLE</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-6 w-lg-6 w-md-12">
+                        <div class="contect-img" data-aos="fade-left">
+                            <img src="images/contect.webp" alt="contect" title="contect" width="100%">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- review -->
+        <section class="review py">
+            <div class="containar">
+                <div class="review-title text-center" data-aos="flip-right">
+                    <h3>Customers Say</h3>
+                    <h2>REVIEW</h2>
+                </div>
+                <div class="row">
+                    <div class="w-12">
+                        <div class="review-item text-center">
+                            <div class="review-img">
+                                <img src="images/review.webp" alt="review" title="review">
+                            </div>
+                            <div class="riview-content">
+                                <p>“ We are lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tellus sem,
+                                    mattis
+                                    in pre </br>-tium nec, fermentum viverra dui ”</p>
+                            </div>
+                            <div class="review-star">
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                            </div>
+                            <div class="review-name">
+                                <p>Marie Simmons ˗ New York</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- discover video -->
+        <section>
+            <div class="discover2-video d-flex justify-center text-center align-center">
+                <div class="containar">
+                    <div class="row">
+                        <div class="w-12">
+                            <div class="discover2-content" data-aos="flip-left">
+                                <h3>Discover video</h3>
+                                <h2>PATO PLACE</h2>
+                                <a href="#"><i class="ri-play-mini-fill"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- news blog -->
+        <section class="py blog-x">
+            <div class="containar">
+                <div class="news-title text-center" data-aos="fade-down">
+                    <h3>Latest News</h3>
+                    <h2>THE BLOG</h2>
+                </div>
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div  class="swiper-slide">
+                            <div class="w-12" data-aos="fade-right">
+                                <div class="newsblog-image">
+                                    <img src="images/newsblog1.webp" alt="blog-1" title="blog-1" width="100%">
+                                </div>
+                                <div class="newsblog-content">
+                                    <a href="#">
+                                        <h3>BEST PLACES FOR WINE</h3>
+                                    </a>
+                                    <p>Phasellus lorem enim, luctus ut velit eget, con</br>-vallis egestas eros.</p>
+                                    <a href="#">Continue Reading <i class="ri-arrow-right-line"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="w-12" data-aos="flip-left">
+                                <div class="newsblog-image">
+                                    <img src="images/newsblog2.webp" alt="blog-2" title="blog-2" width="100%">
+                                </div>
+                                <div class="newsblog-content">
+                                    <a href="#">
+                                        <h3>EGGS AND CHEESE</h3>
+                                    </a>
+                                    <p>Duis elementum, risus sit amet lobortis nunc </br> justo condimentum ligula, vitae
+                                        feugiat</p>
+                                    <a href="#">Continue Reading <i class="ri-arrow-right-line"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="w-12" data-aos="fade-left">
+                                <div class="newsblog-image">
+                                    <img src="images/newsblog3.webp" alt="blog-3" title="blog-3" width="100%">
+                                </div>
+                                <div class="newsblog-content">
+                                    <a href="#">
+                                        <h3>STYLE THE WEDDING PARTY</h3>
+                                    </a>
+                                    <p>Sed ornare ligula eget tortor tempor, quis porta </br>tellus dictum</p>
+                                    <a href="#">Continue Reading <i class="ri-arrow-right-line"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="w-12" data-aos="fade-left">
+                                <div class="newsblog-image">
+                                    <img src="images/newsblog3.webp" alt="blog-3" title="blog-3" width="100%">
+                                </div>
+                                <div class="newsblog-content">
+                                    <a href="#">
+                                        <h3>STYLE THE WEDDING PARTY</h3>
+                                    </a>
+                                    <p>Sed ornare ligula eget tortor tempor, quis porta </br>tellus dictum</p>
+                                    <a href="#">Continue Reading <i class="ri-arrow-right-line"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="w-12" data-aos="fade-left">
+                                <div class="newsblog-image">
+                                    <img src="images/newsblog3.webp" alt="blog-3" title="blog-3" width="100%">
+                                </div>
+                                <div class="newsblog-content">
+                                    <a href="#">
+                                        <h3>STYLE THE WEDDING PARTY</h3>
+                                    </a>
+                                    <p>Sed ornare ligula eget tortor tempor, quis porta </br>tellus dictum</p>
+                                    <a href="#">Continue Reading <i class="ri-arrow-right-line"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- sign-up -->
+        <section class="sign-up py">
+            <div class="containar">
+                <div class="row">
+                    <div class="w-12">
+                        <div class="signin-content d-flex justify-center text-center">
+                            <h3>SPECIALS SIGN UP</h3>
+                            <input type="email" placeholder="Email adrress">
+                            <button type="submit">SIGN UP</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- footer -->
+    <footer class="py ">
+        <div class="containar">
+            <div class="row">
+                <div class="footer-content d-flex wrap justify-center">
+                    <div class="w-4 w-md-6">
+                        <div class="contact-us" data-aos="fade-right">
+                            <h3>CONTACT US</h3>
+                            <ul>
+                                <li><i class="ri-map-pin-2-fill"></i><a href="#">8th floor, 379 Hudson St, New York, NY
+                                        10018</a></li>
+                                <li><i class="ri-phone-fill"></i><a href="#">(+91) 12345 67890</a></li>
+                                <li><i class="ri-mail-fill"></i><a href="#">contact@site.com</a></li>
+                            </ul>
+                        </div>
+                        <div class="opening-time" data-aos="fade-right">
+                            <h3>CONTACT US</h3>
+                            <p>09:30 AM – 11:00 PM</p>
+                            <p>Every Day</p>
+                        </div>
+                    </div>
+                    <div class="w-4 w-md-6">
+                        <div class="footer-link" data-aos="flip-left">
+                            <h3>LATEST TWITTER</h3>
+                            <ul>
+                                <li><i class="ri-twitter-fill"></i><a href="#">@colorlib</a></li>
+                                <li>
+                                    <p>Activello is a good option. It has a slider built into that displays the featured
+                                        image in the slider.</p>
+                                </li>
+                                <li><a href="#">https://buff.ly/2zaSfAQ</a></li>
+                                <li>21 Dec 2017</li>
+                            </ul>
+                            <ul>
+                                <li><i class="ri-twitter-fill"></i><a href="#">@colorlib</a></li>
+                                <li>
+                                    <p>Activello is a good option. It has a slider built into that displays the featured
+                                        image in the slider.</p>
+                                </li>
+                                <li><a href="#">https://buff.ly/2zaSfAQ</a></li>
+                                <li>21 Dec 2017</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="w-4 w-md-12">
+                        <div class="gellary-content" data-aos="fade-left">
+                            <h3>Gallery</h3>
+                            <div class="row">
+                                <div class="w-3">
+                                    <div class="gellary-img">
+                                        <div class="overlay relative">
+                                            <img src="images/g1.webp" alt="gellary" title="gellary" width="100%">
+                                        </div>
+                                        <div class="overlay relative">
+                                            <img src="images/g5.webp" alt="gellary" title="gellary" width="100%">
+                                        </div>
+                                        <div class="overlay relative">
+                                            <img src="images/g9.webp" alt="gellary" title="gellary" width="100%">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="w-3">
+                                    <div class="gellary-img">
+                                        <div class="overlay relative">
+                                            <img src="images/g2.webp" alt="gellary" title="gellary" width="100%">
+                                        </div>
+                                        <div class="overlay relative">
+                                            <img src="images/g6.webp" alt="gellary" title="gellary" width="100%">
+                                        </div>
+                                        <div class="overlay relative">
+                                            <img src="images/g10.webp" alt="gellary" title="gellary" width="100%">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="w-3">
+                                    <div class="gellary-img">
+                                        <div class="overlay relative">
+                                            <img src="images/g3.webp" alt="gellary" title="gellary" width="100%">
+                                        </div>
+                                        <div class="overlay relative">
+                                            <img src="images/g7.webp" alt="gellary" title="gellary" width="100%">
+                                        </div>
+                                        <div class="overlay relative">
+                                            <img src="images/g11.webp" alt="gellary" title="gellary" width="100%">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="w-3">
+                                    <div class="gellary-img">
+                                        <div class="overlay relative">
+                                            <img src="images/g4.webp" alt="gellary" title="gellary" width="100%">
+                                        </div>
+                                        <div class="overlay relative">
+                                            <img src="images/g8.webp" alt="gellary" title="gellary" width="100%">
+                                        </div>
+                                        <div class="overlay relative">
+                                            <img src="images/g12.webp" alt="gellary" title="gellary" width="100%">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- bottom-to-top-button -->
+    <div class="buttom-to-top">
+        <a href="#"><i class="ri-arrow-up-double-line"></i></a>
+    </div>
+
+    <script src="js/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+
+    <script src="js/swiper-bundle.min.js"></script>
+
+    <!-- particle -->
+    <script src="js/particles.min.js"></script>
+    <script src="js/app.js"></script>
+
+
+    <!-- pointer -->
+    <script>
+        var cursor = document.querySelector('.cursor');
+        var cursorinner = document.querySelector('.cursor2');
+        var a = document.querySelectorAll('a');
+
+        document.addEventListener('mousemove', function (e) {
+            var x = e.clientX;
+            var y = e.clientY;
+            cursor.style.transform = `translate3d(calc(${e.clientX}px - 50%), calc(${e.clientY}px - 50%), 0)`
+        });
+
+        document.addEventListener('mousemove', function (e) {
+            var x = e.clientX;
+            var y = e.clientY;
+            cursorinner.style.left = x + 'px';
+            cursorinner.style.top = y + 'px';
+        });
+
+        document.addEventListener('mousedown', function () {
+            cursor.classList.add('click');
+            cursorinner.classList.add('cursorinnerhover')
+        });
+
+        document.addEventListener('mouseup', function () {
+            cursor.classList.remove('click')
+            cursorinner.classList.remove('cursorinnerhover')
+        });
+
+        a.forEach(item => {
+            item.addEventListener('mouseover', () => {
+                cursor.classList.add('hover');
+            });
+            item.addEventListener('mouseleave', () => {
+                cursor.classList.remove('hover');
+            });
+        })
+    </script>
+    
+    <!-- swiper -->
+    <script>
+        $(document).ready(function(){
+        const swiper = new Swiper('.swiper', {
+        // Optional parameters
+        loop: true,
+        autoplay: true,
+        slidesPerView: 3,
+
+        breakpoints: {
+                    1399: {
+                    slidesPerView: 3,
+                    },
+                    1199: {
+                    slidesPerView: 3,
+                    },
+                    991: {
+                    slidesPerView: 2,
+                    },
+                    767: {
+                    slidesPerView: 2,
+                    },
+                    575: {
+                    slidesPerView: 1,
+                    },
+                }
+        });
+    });
+
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            //togal
+            $("#toggle").click(function () {
+                $("#nav").toggle();
+                // console.log('gggggggg');
+            });
+
+            // up to down
+            $(".buttom-to-top").click(function () {
+                $('html, body').animate({ scrollTop: 0 }, 800);
+            });
+
+            // setting
+            $(".setting").click(function () {
+                $(".theam-box").slideToggle();
+            });
+
+            // theme-box
+            $(".color-change").click(function () {
+                var color = $(this).attr('id');
+                $('#colorchange').attr('href', 'css/' + color + '.css');
+            })
+        });
+
+        // fixed-header
+        $(window).scroll(function () {
+            if ($(window).scrollTop() > 700) {
+                $(".header").addClass("fixed-header");
+            }
+
+            else {
+                $(".header").removeClass("fixed-header");
+            }
+        });
+
+        
+        // $(".theme-box a").click(function () {
+        //     var jinkal = $(this).data('path');
+        //     $("#colorChange").attr('href', jinkal);
+        // });
+
+
+        // loader
+        $(window).on('load', function () {
+            $(".loader img").delay(500).fadeOut(1000);
+            $(".loader").delay(1500).fadeOut(2000);
+            setTimeout(function () {
+                $("body").removeClass("hidden");
+            }, 2500);
+        });
+    </script>
+
+    <!-- counter -->
+    <script>
+        (() => {
+            const counter = document.querySelectorAll('.counter');
+            // covert to array
+            const array = Array.from(counter);
+            // select array element
+            array.map((item) => {
+                // data layer
+                let counterInnerText = item.textContent;
+
+                let count = 1;
+                let speed = item.dataset.speed / counterInnerText
+                function counterUp() {
+                    item.textContent = count++
+                    if (counterInnerText < count) {
+                        clearInterval(stop);
+                    }
+                }
+                const stop = setInterval(() => {
+                    counterUp();
+                }, speed);
+            })
+        })()
+    </script>
+    <!-- headline -->
+    <script>
+        var animationDelay = 3500;
+ 
+ animateHeadline($('.cd-headline'));
+  
+ function animateHeadline($headlines) {
+     $headlines.each(function(){
+         var headline = $(this);
+         //trigger animation
+         setTimeout(function(){ hideWord( headline.find('.is-visible') ) }, animationDelay);
+         //other checks here ...
+     });
+ }
+ 
+ function hideWord($word) {
+     var nextWord = takeNext($word);
+     switchWord($word, nextWord);
+     setTimeout(function(){ hideWord(nextWord) }, animationDelay);
+ }
+  
+ function takeNext($word) {
+     return (!$word.is(':last-child')) ? $word.next() : $word.parent().children().eq(0);
+ }
+  
+ function switchWord($oldWord, $newWord) {
+     $oldWord.removeClass('is-visible').addClass('is-hidden');
+     $newWord.removeClass('is-hidden').addClass('is-visible');
+ }
+ 
+ singleLetters($('.cd-headline.letters').find('b'));
+  
+ function singleLetters($words) {
+     $words.each(function(){
+         var word = $(this),
+             letters = word.text().split(''),
+             selected = word.hasClass('is-visible');
+         for (i in letters) {
+             letters[i] = (selected) ? '<i class="in">' + letters[i] + '</i>': '<i>' + letters[i] + '</i>';
+         }
+         var newLetters = letters.join('');
+         word.html(newLetters);
+     });
+ }
+
+    </script>
+</body>
+
+</html>
